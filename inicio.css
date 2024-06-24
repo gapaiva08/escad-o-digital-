@@ -1,0 +1,351 @@
+
+/* inicio.css */
+
+/* Tema Claro */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+#theme-toggle {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#theme-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Resto do seu CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.minilogo
+{
+    height: 60px;
+    margin-right: 50px;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 99;  
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ccc;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.titulo
+{
+    color: #ffffff9d;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.subtitulo
+{
+    color: #ffffff9d;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    
+}
+
+.banner
+{
+    background-image: url(imagens/freepik-export-20240613180249t4jb.png);
+    background-repeat: no-repeat no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blur
+{
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border-radius: 35%; 
+}
+
+.cards
+{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.card1, .card2, .card3
+{
+    margin: auto;
+    width: 160px;
+    height: 235px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+p
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large
+    ;
+}
+h1
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.historia
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 10vh;
+}
+
+.imghistoria
+{
+    width: 400px;
+}
+footer
+{
+    text-decoration: none;
+    background-color: #000;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+.logofooter
+{
+    width: 200px;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.cont
+{
+    margin: auto;
+    text-align: justify;
+}
+.loc
+{
+    margin: auto;
+    text-align: unset;
+}
+
+.subrdp, .txtrdp, .linkrdp
+{
+    color: #fff;
+}
+
+.divcont
+{
+    display: flex;
+}
+
+.divrdp
+{
+    display: flex;
+}
+
+.sb
+{
+margin-left: 5%;
+}
+
+.devs
+{
+    text-decoration: none;
+    margin: auto;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+body.dark {
+    background: #292c35;
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+@media screen and (max-width: 770px) {
+    .navbar
+    {
+        width: 100%;
+        position: fixed;
+    }
+    .nav-links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+    .banner
+    {
+        justify-content: center;
+        background-image: url(imagens/banner2.jfif);
+        max-width: 770px;
+        height: 400px;
+
+    }
+
+    .cards
+    {
+        display: block;
+        margin: auto;
+    }
+    .card1, .card2, .card3
+    {
+        margin-bottom: 30px;
+    }
+
+    .historia
+    {
+        flex-direction: column-reverse;
+    }
+    .imghistoria
+    {
+        
+    }
+    .historiatext
+    {
+        margin: 30px;
+    }
+
+    .divcont, .divrdp
+    {
+        flex-direction: column;
+    }
+}
